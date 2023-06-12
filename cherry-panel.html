@@ -50,8 +50,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">BUSINESS AREAS</a>
                     </li>
-                    <li class="nav-item" onclick="this.classList.toggle('active')" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <li class="nav-item desktop" onclick="this.classList.toggle('active')" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <a class="nav-link" href="#">CORPORATE GOVERNANCE</a>
+                    </li>
+                    <li class="nav-item dropdown mobile">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CORPORATE GOVERNANCE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">General Meeting</a></li>
+                            <li><a class="dropdown-item" href="#">Annual General Meeting 2017</a></li>
+                            <li><a class="dropdown-item" href="#">Nomination committee</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Boards of Directors
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">General Meeting</a></li>
+                                        <li><a class="dropdown-item" href="#">Annual General Meeting 2017</a></li>
+                                        <li><a class="dropdown-item" href="#">Nomination committee</a></li>
+                                    </ul>
+                                </li>
+                                    </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">INVESTORS</a>
@@ -96,7 +119,7 @@
         </div>
     </div>
 
-    <div class="collapse pt-4" id="collapseExample">
+    <div class="collapse pt-4 desktop" id="collapseExample">
         <div class="container">
             <div class="row">
                 <div class="col">

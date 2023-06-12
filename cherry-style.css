@@ -534,3 +534,25 @@ body {
 /*        display: initial;*/
 /*    }*/
 /*}*/
+
+/*.desktop{*/
+/*    display:none;*/
+/*}*/
+
+.mobile{
+    display:none;
+}
+
+.mobile:focus-within>ul,
+.mobile:hover>ul{
+    display:block;
+}
+
+@media (max-width:991px){
+    .desktop{
+        display:none;
+    }
+    .mobile{
+        display:initial;
+    }
+}

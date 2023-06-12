@@ -1,3 +1,6 @@
+.header-place{
+    display:none;
+}
 *{
     margin:0;padding:0;
     box-sizing:border-box;
@@ -17,7 +20,7 @@ header{
     padding: 0px 7%;
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 1000;
 }
 
@@ -82,6 +85,9 @@ header label{
 }
 
 @media(max-width:991px){
+    .header-place{
+        display:inherit;
+    }
     header{
         padding:20px;
     }
@@ -92,10 +98,13 @@ header label{
 
     header .navbar{
         position: absolute;
-        top:100%; left:0;right:0;
+        top:100%;
+        left:0;
+        right:0;
         background: #fff;
         border-top: 1px solid rgba(0,0,0,.1);
         display:none;
+        text-align: center;
     }
 
     header .navbar ul li{
@@ -107,6 +116,9 @@ header label{
     }
     header .navbar ul li ul li{
         background: #eee;
+    }
+    header .navbar ul li ul li ul li{
+        background: rgba(255, 183, 184, 0.5);
     }
     header .navbar ul li ul li ul{
         width:100%;
